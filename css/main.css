@@ -1,0 +1,1060 @@
+/* CSS normalization */
+html {
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+* {
+    max-height: 1000000px;
+}
+img {
+    border-style: none;
+}
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+b,
+strong {
+    font-weight: bolder;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+button,
+input {
+    overflow: visible;
+}
+button,
+select {
+    text-transform: none;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+textarea {
+    overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+/* Custom CSS */
+p{
+    font-size: 18px;
+}
+body {
+    font: 400 16px/1 "Karla", sans-serif;
+    min-width: 320px;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+section{
+    padding: 80px 0;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?1yl5ub');
+    src:  url('../fonts/icomoon.eot?1yl5ub#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?1yl5ub') format('truetype'),
+    url('../fonts/icomoon.woff?1yl5ub') format('woff'),
+    url('../fonts/icomoon.svg?1yl5ub#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-facebook:before {
+    content: "\e900";
+}
+.icon-location:before {
+    content: "\e901";
+}
+.icon-phone:before {
+    content: "\e902";
+}
+.icon-instasgram:before {
+    content: "\e903";
+}
+.icon-twitter:before {
+    content: "\e904";
+}
+.icon-tick:before {
+    content: "\e905";
+}
+.icon-back:before {
+    content: "\e906";
+}
+#wrapper {
+    background: #fff;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;   
+    font-family: "Poppins", sans-serif;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -24px;
+}
+.col {
+    box-sizing: border-box;
+    padding: 0 24px;
+}
+/* Hero Banner Section */
+.hero-title {
+    color: #eee;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+    line-height: 80px;
+}
+.section-heading {
+    padding: 0;
+    font-size: 45px;
+    margin: 0 0 34px 0;
+    font-weight: 550;
+}
+.about-header{
+    text-align: center;
+}
+.section-heading small {
+    color: #7977F8;
+    letter-spacing: 10px;
+    font-size: 24px;
+    display: block;
+    margin: 0 0 10px 0;
+}
+.hero-title span {
+    color: #8dd752;
+}
+.hero-banner {
+    position: relative;
+    z-index: 0;
+    display: flex;
+}
+.hero-banner img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.hero-caption {
+    height: 440px;
+    display: flex;
+    align-items: center;
+}
+/* Welcome Section */
+.about-welcome-section .col{
+    width: 50%;
+}
+.block-title .welcome-image {
+    width: 50%;
+}
+.welcome-content p {
+    margin: 0;
+}
+.welcome-content img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.welcome-section .col {
+    width: 50%;
+    padding: 0 24px;
+    height: 320px;
+}
+.welcome-section{
+    margin-bottom:-80px;
+}
+/* Upcoming Classes Section */
+.upcoming-classes-section .section-header{
+    text-align: center;
+}
+.upcoming-classes-section .section-header .head{
+    text-align: left;
+}
+.upcoming-classes-section .col {
+    width: 33.33%;
+    padding: 24px;
+}
+.product-item:hover {
+    box-shadow: 0 3px 6px rgb(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -8px);
+}
+.product-content h3 {
+    font-size: 30px;
+    font-weight: 550;
+    margin: 16px 0;
+}
+.product-content img {
+    display: block;
+    width: 100%;
+}
+.product-content p {
+    color: #6a6a6a;
+    text-align: left;
+    font-size: 18px;
+}
+.product-content a {
+    color: #90ee90;
+    font-size: 18px;
+}
+/* Amenities Section */
+.amenity-details{
+    margin: 170px 0;
+}
+.amenities-title, .amenities-title small {
+    color: #eee;
+}
+.amenity-title {
+    font-size: 22px;
+    color: #eee;
+    display: inline-block;
+    background-color: black;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: 400;
+}
+.amenities-section {
+    background: #7977f8;
+    color: #eee;
+    padding: 57px 0 106px 0;
+}
+.amenities-list .col {
+    width: 50%;
+    padding: 0 24px;
+}
+.amenity-item .block-title {
+    margin: 0;
+}
+.amenity-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 6px 0;
+}
+.amenity-item {
+    position: relative;
+    margin: 32px;
+}
+.amenity-item::before {
+    content: "";
+    position: absolute;
+    top: -26px;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #eee;
+    margin: 16px 0;
+}
+.icon-tick{
+    color:#8dd752;
+    margin:0 8px 0  0;
+    vertical-align: middle;
+}
+/* Footer */
+.footer-heading{
+    font-size: 30px;
+    margin: 19px 0 11px;
+}
+.site-footer {
+    color: #eee;
+    margin: 0;
+    padding: 0;
+}
+.footer-frame {
+    background: #2A3441;
+}
+.footer-frame .col {
+    margin: 0 24px;
+    padding: 22px 0 28px 0;
+}
+.footer-frame .col a {
+    color: #eee;
+}
+.footer-motto strong {
+    display: block;
+}
+.newsletter {
+    display: flex;
+}
+.newsletter-signup input {
+    height: 40px;
+    padding: 6px 45px 7px 21px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.newsletter-button {
+    background: #8dd752;
+    font-size: 18px;
+    height: 40px;
+    padding: 0px 12px;
+    border: none;
+    border-radius: 3px;
+    margin: 0 12px;
+}
+.newsletter-input[placeholder="Enter Your Email"]::placeholder {
+    color: #eee;
+}
+.newsletter-signup {
+    display: flex;
+}
+.social-links {
+    display: flex;
+    list-style: none;
+    margin: 0 -50px;
+}
+.footer-social-media{
+    margin: 0px;
+    width: 100%;
+}
+ul{
+    margin: 0 -40px ;
+}
+.social-icon {
+    margin: 0 10px 0;
+}
+.footer-bottom {
+    text-align: center;
+}
+.footer-bottom a {
+    color: #555;
+}
+.site-copyright {
+    text-align: center;
+    color: #8dd752;
+}
+/* About */
+.collection-frame .col {
+    width: 33.33%;
+    padding: 24px;
+}
+.trainers-description{
+    background: #1b2129;
+    color: #eee;
+    padding: 25px 25px 40px 27px;
+}
+.trainers-info img{
+    width: 100%;
+    margin: -3px 0;
+}
+.trainers-description h3{
+    padding: 0 0 16px 0;
+    margin: 0;
+    border-bottom: 1px solid #eee;
+}
+.trainers-description p strong{
+    display: block;
+    color: #eee;
+}
+.trainers-description ul{
+    display: flex;
+    list-style: none;
+}
+.trainers-description ul li{
+    margin: 0 18px 0 0;
+    
+}
+.trainers-description p{
+    color: #858585;
+    margin: 24px 0;
+}
+.social li a{
+    color: #eee;
+}
+/* Contact */
+.welcome-description h3{
+    border-bottom: 1px solid #d3d3d3;
+}
+.welcome-description p{
+    margin: 0;
+    color: #6a6a6a;
+    line-height: 28px;
+}
+.contact-form{
+    background: #f9f9f9;
+}
+form{
+    padding: 35px 0 77px 0;
+}
+.form-input input{
+    width: 100%;
+    height: 57px;
+    background: none;
+    border: 1px solid #d3d3d3;
+    margin: 14px 0;
+}
+.form-input textarea{
+    width: 100%;
+    height: 130px;
+    background: none;
+    border: 1px solid #d3d3d3;
+    margin: 0 0 23px 0;
+}
+.form-button {
+    background: #1b1b1b;
+    font-size: 18px;
+    height: 40px;
+    padding: 9px 40px;
+    border: none;
+    border-radius: 3px;
+    color: #eee;
+}
+.contact-form p{
+    color: #7977f8;
+}
+.welcome-frame .col {
+    width: 50%;
+    padding: 0 24px;
+}
+textarea{
+    resize: none;
+}
+.form-input textarea::placeholder {
+    padding: 50px 0;
+}
+.contact-title, .contact-title small {
+    color: #eee;
+}
+.contact-detail-frame {
+    background: #7977f8;
+    color: #eee;
+}
+.location-column{
+    width: 33.33%;
+}
+.contact-article {
+    padding: 50px 70px;
+    background: #6766b9;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+.contact-number{
+    margin: 23px 0;
+}
+.title-tag span{
+    margin: 0 16px;
+}
+.map{
+    margin: 24px;
+    width: 100%;
+}
+.map iframe{
+    width: 100%;
+    height: 300px;
+    border:none;
+}
+/* Header */
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+.navigation-list {
+    display: flex;
+    list-style: none;
+    transition: color 0.4s ease-in-out;
+    font-size: 20px;
+    margin: 0 -20px;
+}
+.navigation-item {
+    padding: 0 21px;
+}
+.navigation-item a {
+    color: #555;
+}
+.navigation-item a:hover {
+    color: #8dd752;
+}
+/*Scedule*/
+.table-wrap {
+    overflow-x: auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    text-align: center;
+    padding: 17px 8px;
+    height: 100px;
+    border:1px solid #eee;
+    font-size: 22px;
+    color: #eee;
+}
+table span{
+    display: block;
+    color: #8dd752;
+}
+th{
+    background: #1c2128;    
+    font-weight: 400;
+}
+td{
+    color: #eee;
+    background: #2c323a;
+}
+/*class*/
+.site-heading span {
+    color: #8dd752;
+}
+.ads-banner {
+    position: relative;
+    z-index: 0;
+    display: flex;
+}
+.ads-banner img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.ads-caption {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #eee;
+    text-align: center;
+}
+.ads-caption h2{
+    font-size: 48px;
+    margin: 0;
+}
+.ads-banner {
+    position: relative;
+    z-index: 0;
+    display: flex;
+}
+.ads-banner img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.site-ads-contents{
+    height: 382px;
+    display: flex;
+    align-items: center;
+}
+.ads-block{
+    text-align: center;
+    color: #eee;
+}
+.ads-bolck h2 {
+    font-size: 48px;
+}
+.ads-button {
+    background: #8dd752;
+    font-size: 18px;
+    height: 70px;
+    width: 247px;
+    border: none;
+    border-radius: 11px;
+    margin: 14px 0;
+}
+/*single page*/
+.site-title span{
+    margin: 0 20px 0 0;
+}
+.site-title a{
+    color: #000;
+}
+.about-class p{
+    color: #6a6a6a;
+    margin-bottom: 0px;
+}
+.yoga-description{
+    width: 433px;
+}
+.yoga-contant{
+    background: #f9f9f9;
+    padding: 35px 47px;
+}
+.yoga-contant p, .yoga-contant ul{
+    color: #6a6a6a;
+    list-style: none;
+    padding-bottom: 16px;
+}
+.yoga-contant ul li{
+    padding-bottom: 16px;
+}
+.yoga-contant ul li strong{
+    color: #1d2229;
+    font-weight: 500;
+}
+.yoga-section{
+    padding: 80px 0px;
+}
+.yoga-button{
+    background: #8dd752;
+    font-size: 18px;
+    height: 40px;
+    padding: 0px 12px;
+    border: none;
+    border-radius: 7px;
+    margin: 0;
+    color: #eee;
+}
+.membership-frame{
+    background: #7977f8;
+    color: #eee;
+}
+.membership-frame h2 small{
+    color:#eee;
+}
+.membership-article{
+    padding: 29px;
+    background: #6766b9;
+    display: flex;
+    flex-direction: column;
+}
+.membership-button{
+    background: #1b1b1b;
+    font-size: 18px;
+    height: 40px;
+    padding: 0px 12px;
+    border: none;
+    border-radius: 7px;
+    margin: 0;
+    color: #eee;
+}
+.membership-button-green{
+    background: #8dd752;
+    font-size: 18px;
+    height: 40px;
+    padding: 0px 12px;
+    border: none;
+    border-radius: 7px;
+    margin: 0;
+    color: #eee;
+}
+.membership-column{
+    width:33.33%;
+}
+.offer{
+    list-style: none;
+}
+.offer li{
+    padding: 16px 0;
+}
+.feature{
+    padding: 0 60px;
+}
+.feature li{
+    padding: 16px 0;
+}
+/*responsive*/
+.sidebar{
+    position: fixed;
+    background: #F8F7F7;
+    top: 0; 
+    right: -100%;
+    height: 100%;
+    width:100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: right 0.3s;
+    z-index: 2;
+    overflow: auto;
+}
+.sidebar:target{
+    right: 0;
+    margin: 0;
+    padding: 0;
+}
+.sidebar li{
+    width: 100%;
+    text-align: center;
+}
+.sidebar a{
+    width: 100%;
+    color: #332e2e;
+}
+.close-button {
+    background: #f1f1f1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 23px;
+    cursor: pointer;
+}
+.mobile{
+    margin: 30px 0;
+    padding: 0 0 60px 0;
+    border-bottom: 1px solid #fff;
+}
+.menu-button{
+    display: none;
+    margin: 0px 20px;
+}
+/*for small desktop [range check 992-1199]*/
+@media(max-width:1200px) {
+    .container{
+        padding: 0 10px;
+    }
+}
+/*for tablet [range check 768-991]*/ 
+@media(max-width:992px) {
+    .contact-article {
+        padding: 24px 0px 27px 24px;
+    }
+    .container{
+        padding: 0 10px;
+    }
+    .upcoming-classes-section .col{
+        width: 50%;
+    }
+    .collection-frame .col{
+        width: 50%;
+    }
+    .utility{
+        display: none;
+    }
+    .web-nav ul li a {
+        font-size: 16px;
+    }
+    .hero-title {
+        font-size: 40px;
+    }
+    .single_page-img{
+        width:600px;
+    }
+    .yoga-description{
+        width: 350px;
+    }
+}
+/*for mobile [range check 320-767]*/
+@media(max-width: 768px){
+    /*header*/
+    .site-logo{
+        width: 34px;
+        height: 32px;
+    }
+    .site-logo img{
+        width: 100%;
+    }
+    .hero-caption{
+        height: 168px;
+    }
+    .section-heading{
+        font-size: 18px;
+        margin: 0px 0 6px 0;
+    }
+    .section-heading small{
+        font-size: 16px;
+    }
+    .about-welcome-section .col{
+        width: 100%;
+    }
+    .welcome-section .col {
+        width: 100%;
+        padding: 0 24px 0 24px;
+    }
+    .upcoming-classes-section .col{
+        width: 100%;;
+    }
+    .hero-caption h1{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .col{
+        width: 100%;
+    }
+    .amenity-title {
+        padding: 0px 7px 0px 10px;
+    }
+    .icon-tick{
+        font-size: 10px;
+    }
+    .amenities-section{
+        padding: 0px 8px 0px 0;
+    }
+    .amenities-list .col {
+        width: 100%;
+        padding: 0 18px 0 24px;
+    }
+    .amenities-content{
+        font-size: 16px;
+    }
+    .amenity-details{
+        margin: 16px 0;
+    }
+    .amenity-item{
+        margin: 0;
+    }
+    .footer-info{
+        order: 2;
+    }
+    .footer-motto-detials {
+        display: flex;
+        flex-direction: column; 
+    }
+    .footer-social-media {
+        order: 1;
+    }
+    .footer-motto {
+        order: 2;
+        font-size: 16px;
+    }
+    .footer-motto strong{
+        display: none;
+    }
+    .footer-bottom p{
+        font-size: 16px;
+        margin: 0;
+    }
+    .social-links{
+        margin:-30px 0 0 0;
+        font-size: 24px;
+        justify-content: flex-end;
+    }
+    .footer-heading{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .navigation-item{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    /*  contact*/
+    .welcome-frame .col{
+        width: 100%;
+    }
+    /*  table*/
+    .table thead{
+        display: none;
+    }
+    .table, .table tbody, .table tr, .table td{
+        display: block;
+        width: 100%;
+        font-size: 16px;
+    }
+    .table td{
+        text-align: center;
+        padding:30px 0px 21px 155px;
+    }
+    .table-display{
+        background: #1c2128;
+    }
+    .table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left:0;
+        width: 50%;
+        padding: 21px 8px;
+        font-size:15px;
+        font-weight: bold;
+        text-align: center; 
+    }
+    /*  about*/
+    .collection-frame .col{
+        width:100%;
+        padding: 12px 24px;
+    }
+    .trainers-description {
+        padding: 18px 16px 17px 16px;
+    }
+    .trainers-description p{
+        font-size: 16px;
+    }
+    /*footer*/
+    .site-footer {
+        color: #eee;
+        margin: 0;
+        padding: 0;
+    }
+    .utility{
+        display: none;
+    }
+    .footer-frame .col {
+        margin: 0 24px;
+        padding: 0px 0 24px 0;
+    }
+    .footer-logo{
+        height: 48px;
+        width: 48px;
+    }
+    .footer-logo img{
+        width: 100%;
+    }
+    .newsletter-signup input {
+        padding: 6px 45px 7px 8px;
+        width: 200px;
+    }
+    .newsletter-button {
+        font-size: 16px;
+        padding: 0px 5px;
+        margin: 0 14px;
+    }
+    section{
+        padding: 30px 0;
+    }
+    .container{
+        padding: 0 8px;
+    }
+    .section-heading small{
+        margin: 0;
+        letter-spacing: 6.4px;
+    }
+    .product-content h3{
+        font-size: 18px;
+        font-weight: 600;
+        margin: 16px 0;
+    }
+    .product-content p{
+        font-size: 16px;
+    }
+    /*class*/
+    .ads-caption h2{
+        font-size: 18px;
+    }
+    .ads-caption p{
+        font-size: 16px;
+    }
+    .ads-button{
+        height: 42.16px;
+        font-size: 16px;
+        width: 97.96px;
+    }
+    .trainers-description p strong{
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    .trainers-description ul{
+        font-size: 23px;
+    }
+    /*single-page    */
+    .yoga-section{
+        padding: 0;
+    }
+    .yoga-description{
+        padding: 0 10px;
+    }
+    .about-class{
+        padding: 30px 0;
+        text-align: center;
+        line-height: 200%;
+    }
+    .membership-frame h2 small{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .membership-frame-title h2{
+        margin-bottom: 8px ;
+    }
+    .membership-article{
+        margin: 8px  0;
+    }
+    .welcome-frame-para{
+        padding: 18px 0 0 0;
+    }
+    .welcome-description h3{
+        padding: 30px 0;
+    }
+    form{
+        padding: 14px 7px 16px 8px;
+    }
+    .contact-form{
+        margin: 30px 0;
+    }
+    .contact-article {
+        padding: 24px 0px 27px 16px;
+    }
+    .contact-article h3{
+        margin: 0;
+    }
+    .title-tag span{
+        margin: 0 8px 0 0;
+    }
+    .location-column{
+        margin: 12px 0;
+    }
+    .map{
+        margin: 12px 24px;
+    }
+}
